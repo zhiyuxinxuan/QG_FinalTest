@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    /* background-color: #2d3a4b; */
+}
+
+a {
+    text-decoration: none;
+    color: #466deb;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+}
+
+.title {
+    margin-left: 20px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.title:hover {
+    color: rgb(17, 129, 227);
+}
+
+.triangle {
+    position: absolute;
+    top: 34px;
+    left: 345px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1100px;
+    /* height: 450px; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 6px #999;
+    border-radius: 8px;
+}
+
+.content_title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    border-bottom: 1px solid #cbcaca;
+}
+
+.content_title>span {
+    margin-left: 20px;
+}
+
+.userinfo_text {
+    margin: 20px auto;
+    /* background-color: palegoldenrod; */
+    width: 95%;
+    height: 50px;
+}
+
+.userinfo_text>span {
+    display: inline-block;
+    width: 10%;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.userinfo_text>i {
+    margin-left: 35px;
+    color: red;
+}
+
+.userinfo_text .text_box {
+    margin-left: 10px;
+    width: 17%;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    border: 1px solid #bab6b6;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.userinfo_text .long {
+    width: 82%;
+}
+
+.text_box>input {
+    margin-left: 8px;
+    width: 95%;
+    height: 30px;
+    line-height: 33px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.mb_0 {
+    margin-bottom: 0px;
+}
+
+.content>textarea {
+    margin-left: 100px;
+    width: 86%;
+    height: 250px;
+    outline: none;
+    border-color: #999;
+    font-size: 15px;
+    border-radius: 8px;
+    color: #000;
+}
+
+
+
+.content .meeting_pic {
+    margin-left: 100px;
+}
+
+.content img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #999;
+}
+
+.meeting_pic>button {
+    width: 70px;
+    height: 25px;
+}
+
+.preview_container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.preview_container .images {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.userinfo_text .meeting_type {
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.submit,
+.save {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    background-color: rgb(17, 129, 227);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 240px;
+    margin-top: 40px;
+}
+
+.save {
+    margin-left: 330px;
+}
+
+.empty {
+    width: 90%;
+    height: 30px;
+}

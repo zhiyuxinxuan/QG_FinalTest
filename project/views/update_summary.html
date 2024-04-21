@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/update_summary.css">
+</head>
+
+<body>
+    <div class="nav">
+        <span class="title" style="margin-left: 150px;">首页</span>
+        <span class="title" style="color: rgb(17, 129, 227);">上传纪要</span>
+        <span class="title">疑问反馈</span>
+        <span class="title">个人中心</span>
+        <span class="triangle"></span>
+    </div>
+    <div class="content">
+        <div class="content_title"><span>个人信息</span></div>
+        <div class="userinfo_text">
+            <i>*</i><span>姓名</span><span class="text_box"><input type="text" value="admin"></span>
+            <i>*</i><span>所属组别</span><span class="text_box"><input type="text" value=""></span>
+            <i>*</i><span>上传时间</span><span class="text_box"><input type="date"></span>
+        </div>
+        <div class="content_title"><span>会议信息</span></div>
+        <div class="userinfo_text"><i>*</i><span>会议主题</span><span class="text_box long"><input type="text"
+                    value=""></span>
+        </div>
+        <div class="userinfo_text mb_0"><i>*</i><span>会议内容</span></div>
+        <textarea name="meeting">&nbsp;</textarea>
+        <div class="userinfo_text mb_0"><i>*</i><span>会议照片</span></div>
+        <div class="meeting_pic"><img src="http://img.tukuppt.com//png_preview/00/04/79/gCVIp0YiIY.jpg!/fw/780" alt="">
+            <input type="file" id="files">
+            <button class="cancel">取消上传</button>
+        </div>
+        <div class="userinfo_text mb_0"><i>*</i><span>个人纪要内容</span><input type="file" style="margin-left: 20px;"
+                accept=".txt">
+        </div>
+        <div class="userinfo_text mb_0"><i>*</i><span>会议类型</span>
+            <input type="radio" name="meeting_type" checked="checked" class="meeting_type"><span>办公</span>
+            <input type="radio" name="meeting_type" class="meeting_type"><span>康乐</span>
+        </div>
+        <div class="userinfo_text mb_0"><i>&nbsp</i><span>会议标签</span>
+            <input type="checkbox" name="meeting_type" class="meeting_type"><span>加急</span>
+            <input type="checkbox" name="meeting_type" class="meeting_type"><span>比赛</span>
+            <input type="checkbox" name="meeting_type" class="meeting_type"><span>外包</span>
+            <input type="checkbox" name="meeting_type" class="meeting_type"><span>组会</span>
+            <input type="checkbox" name="meeting_type" class="meeting_type"><span>全体大会</span>
+        </div>
+        <div><button class="submit">提交</button>
+            <button class="save">保存</button>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <script src="../js/update_summary.js"></script>
+</body>
+
+</html>

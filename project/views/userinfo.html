@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/userinfo.css">
+</head>
+
+<body>
+    <div class="userinfo">
+        <div class="nav">
+            <span class="title" style="margin-left: 150px;">首页</span>
+            <span class="title">上传纪要</span>
+            <span class="title">疑问反馈</span>
+            <span class="title" style="color: rgb(17, 129, 227);">个人中心</span>
+            <span class="triangle"></span>
+        </div>
+        <div class="content">
+            <div class="left">
+                <img class="user_pic" src="https://img95.699pic.com/xsj/0f/fa/81.jpg%21/fh/300">
+                <div class="username">admin</div>
+                <div class="username">普通用户</div>
+            </div>
+            <div class="right">
+                <div class="right_user">
+                    <div class="r_title"><span>个人信息</span></div>
+                    <div class="userinfo_text"><i>*</i><span>用户名</span><span class="text_box"><input type="text"
+                                value="admin"></span></div>
+                    <div class="userinfo_text"><i>*</i><span>密码</span><span class="text_box"><input type="password"
+                                value="123"></span></div>
+                    <div class="userinfo_text"><i>*</i><span>昵称</span><span class="text_box"><input type="text"></span>
+                    </div>
+                    <div class="userinfo_text"><i>*</i><span>邮箱</span><span class="text_box"><input type="email"></span>
+                    </div>
+                    <div class="userinfo_text"><i>*</i><span>身份</span><input type="radio" name="identity"
+                            value="manager" class="choices"><em>管理员</em><input type="radio" name="identity"
+                            value="member" checked="checked" class="choices" style="margin-left: 30px;"><em>普通用户</em>
+                    </div>
+                    <div class="userinfo_text add_p"><i>*</i><span>头像</span>
+                        <div class="add">
+                            <img src="https://img95.699pic.com/xsj/0f/fa/81.jpg%21/fh/300" class="add_pic">
+                            <input type="file" id="files">
+                            <button class="cancel">取消上传</button>
+                        </div>
+                    </div>
+                    <button class="save">保存</button>
+                </div>
+                <div class="update">
+                    <div class="r_title"><span>上传记录</span></div>
+                    <ul>
+                        <li>&nbsp;&nbsp;会议纪要<a href="javascript:void(0)" class="green">已通过&nbsp;&nbsp;</a></li>
+                        <li>&nbsp;&nbsp;会议纪要<a href="javascript:void(0)" class="yellow">待审核&nbsp;&nbsp;</a></li>
+                        <li>&nbsp;&nbsp;会议纪要<a href="javascript:void(0)" class="red">被退回&nbsp;&nbsp;</a></li>
+                    </ul>
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/userinfo.js"></script>
+</body>
+
+</html>

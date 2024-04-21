@@ -1,0 +1,195 @@
+ @font-face {
+     font-family: 'icomoon';
+     src: url('fonts/icomoon.eot?kx9byf');
+     src: url('fonts/icomoon.eot?kx9byf#iefix') format('embedded-opentype'),
+         url('fonts/icomoon.ttf?kx9byf') format('truetype'),
+         url('fonts/icomoon.woff?kx9byf') format('woff'),
+         url('fonts/icomoon.svg?kx9byf#icomoon') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: block;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: "Microsoft YaHei";
+     font-size: 13px;
+     /* background-color: #2d3a4b; */
+ }
+
+ a {
+     text-decoration: none;
+     color: #466deb;
+ }
+
+ .box {
+     margin: 0 auto;
+     margin-top: 90px;
+     /* background-color: cadetblue; */
+     width: 350px;
+     height: 420px;
+     border-radius: 18px;
+     border: 1px solid #999;
+     box-shadow: 12px 7px 10px #999;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: center;
+ }
+
+ span {
+     display: inline-block;
+     width: 90px;
+     height: 40px;
+     line-height: 40px;
+     margin: 0 10px;
+     text-align: center;
+     font-weight: 700;
+     font-size: 16px;
+
+ }
+
+ .blue {
+     color: rgb(17, 129, 227);
+     border-bottom: 2px solid rgb(17, 129, 227);
+ }
+
+ .black {
+     color: #000;
+     border-bottom: none;
+ }
+
+ .login_title {
+     margin-left: 30px;
+     cursor: pointer;
+
+ }
+
+ .register_title {
+     margin-right: 30px;
+     cursor: pointer;
+ }
+
+ .register_title:hover {
+     color: rgb(17, 129, 227);
+ }
+
+ .nav {
+     width: 300px;
+     height: 40px;
+     margin-top: 52px;
+     /* background-color: skyblue; */
+     border-bottom: 1px solid #585858;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+
+ .margin_top {
+     margin-top: 25px;
+     border-bottom: 1px solid #585858;
+ }
+
+ .username {
+     width: 300px;
+     height: 45px;
+     margin-top: 30px;
+     border: 1px solid #999;
+     border-radius: 4px;
+     display: flex;
+     justify-content: start;
+ }
+
+ .password {
+     width: 300px;
+     height: 45px;
+     margin-top: 20px;
+     border: 1px solid #999;
+     border-radius: 4px;
+     display: flex;
+     justify-content: start;
+ }
+
+ .user {
+     font-family: 'icomoon';
+     width: 50px;
+     height: 45px;
+     border: none;
+     border-right: 1px solid #999;
+     margin: 0;
+     border-radius: 4px 0 0 4px;
+     font-size: 20px;
+     color: #333;
+     line-height: 45px;
+
+ }
+
+ .user_text {
+     width: 218px;
+     font-size: 14px;
+     margin-left: 5px;
+     outline: none;
+     border: none;
+     color: #999;
+ }
+
+ .see {
+     font-family: 'icomoon';
+     font-weight: normal;
+     color: #999;
+     display: flex;
+     align-self: self-end;
+     border: none;
+     margin: 0;
+     width: 20px;
+     cursor: pointer;
+ }
+
+ .tip {
+     margin-top: 20px;
+     margin-left: 5px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .button {
+     background-color: rgb(17, 129, 227);
+     color: #fff;
+     width: 300px;
+     height: 45px;
+     text-align: center;
+     line-height: 45px;
+     font-size: 17px;
+     border-radius: 6px;
+     margin-top: 45px;
+     cursor: pointer;
+ }
+
+ .login {
+     display: block;
+ }
+
+ .register {
+     display: none;
+ }
+
+ .tip_top {
+     position: relative;
+     margin: 0 auto;
+     width: 200px;
+     height: 25px;
+     color: red;
+     border: 1px solid red;
+     text-align: center;
+     line-height: 25px;
+     display: none;
+ }
+
+ .success {
+     color: green;
+     border: 1px solid green;
+ }
