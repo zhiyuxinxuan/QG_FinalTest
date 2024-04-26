@@ -1,0 +1,122 @@
+.nav {
+    width: 1440px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    position: relative;
+}
+
+.title {
+    margin-left: 20px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.title:hover {
+    color: rgb(17, 129, 227);
+}
+
+.triangle {
+    position: absolute;
+    top: 34px;
+    left: 480px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.content_no,
+.content_yes {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 6px #999;
+    border-radius: 8px;
+}
+
+.c_title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    border-bottom: 1px solid #cbcaca;
+}
+
+.c_title>span {
+    margin-left: 20px;
+}
+
+.question {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    min-height: 50px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.question>span {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.question>i {
+    font-family: 'icomoon';
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.question>textarea {
+    width: 88%;
+    height: 80px;
+    margin: 10px auto;
+    margin-right: 10px;
+    outline: none;
+    display: none;
+}
+
+.question>button {
+    width: 5%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(17, 129, 227);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 62px;
+    margin-right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.empty {
+    width: 90%;
+    height: 20px;
+
+}

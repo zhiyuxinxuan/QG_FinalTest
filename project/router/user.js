@@ -19,7 +19,7 @@ const route = (req, res) => {
     const path = url.split('?')[0];
     res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
     if (method === 'POST' && path === '/api/register') {//注册的判断
-        res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
+        // res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
         let postdata = '';
         req.on('data', chunk => {//流的方式获取数据
             postdata += chunk.toString();
@@ -102,6 +102,7 @@ const route = (req, res) => {
         })
         req.on('end', () => {
             const userinfo = JSON.parse(postdata)//json转换
+            console.log(postdata);
             if (!userinfo.username || !userinfo.password) {//查看是否为空
                 index = 0;
             }

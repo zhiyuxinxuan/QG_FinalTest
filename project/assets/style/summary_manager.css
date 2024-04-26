@@ -1,0 +1,286 @@
+.nav {
+    width: 1440px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    margin-left: 20px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.title:hover {
+    color: rgb(17, 129, 227);
+}
+
+.triangle {
+    position: absolute;
+    top: 34px;
+    left: 345px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.content_no,
+.content_yes {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 6px #999;
+    border-radius: 8px;
+}
+
+.content_yes {
+    margin-bottom: 20px;
+}
+
+.c_title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    border-bottom: 1px solid #cbcaca;
+}
+
+.c_title>span {
+    margin-left: 20px;
+}
+
+.c_nav {
+    margin-left: 55px;
+    margin-top: 10px;
+    width: 90%;
+    min-height: 50px;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 1px solid #999;
+    display: flex;
+}
+
+.c_nav>span {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.unchecked,
+.checked {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    min-height: 50px;
+    border-bottom: 1px solid #999;
+    /* border-radius: 8px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.unchecked>a,
+.checked>a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000;
+    width: 200px;
+}
+
+.unchecked>span,
+.checked>span {
+    display: inline-block;
+    width: 180px;
+    margin-left: -8px;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.unchecked .type,
+.checked .type {
+    width: 60px;
+}
+
+.unchecked .label,
+.checked .label {
+    margin-left: 40px;
+    width: 150px;
+}
+
+.unchecked .time,
+.checked .time {
+    width: 86px;
+    margin-left: 20px;
+}
+
+.function {
+    margin-right: 10px;
+    width: 188px;
+    display: flex;
+    justify-content: end;
+}
+
+.function>i {
+    font-family: 'icomoon';
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.unchecked .watch,
+.checked .watch {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #666;
+}
+
+.pass {
+    background-color: #19bb26d3;
+}
+
+.back {
+    background-color: #f42e2e;
+}
+
+.checked .modify {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #19bb26d3;
+}
+
+.checked .delete {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #f42e2e;
+}
+
+.empty {
+    width: 90%;
+    height: 20px;
+
+}
+
+.summary_container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.summary_container .summary_text {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary_container .summary_text>i {
+    font-family: 'icomoon';
+    width: 13px;
+    height: 13px;
+    color: #000;
+    background-color: #999;
+    border-radius: 2px;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 980px;
+}
+
+.summary_container .summary_text>span {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.search {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1440px;
+}
+
+.white {
+    width: 270px;
+}
+
+.search_box {
+    background-color: #fff;
+    width: 650px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.search_box>input {
+    height: 30px;
+    width: 540px;
+    margin: 5px 0;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #999;
+}
+
+.search_box>i {
+    font-family: 'icomoon';
+    width: 90px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.search>select {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+}

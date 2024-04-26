@@ -79,7 +79,7 @@ btn_login.onclick = function () {
     else {
         var str = JSON.stringify({ 'username': text[0].value, 'password': text[1].value })
         var xhr = new XMLHttpRequest()
-        xhr.open('POST', 'http://127.0.0.1/api/login')
+        xhr.open('POST', 'http://127.0.0.1:80/api/login')
         xhr.setRequestHeader('content-Type', 'application/json')
         xhr.setRequestHeader('Access-Control-Allow-Header', 'X-Requested-With');
         xhr.send(str)
@@ -123,7 +123,7 @@ btn_register.onclick = function () {
     else {
         var str = JSON.stringify({ 'username': text[0].value, 'password': text[1].value })
         var xhr = new XMLHttpRequest()
-        xhr.open('POST', 'http://127.0.0.1/api/register')
+        xhr.open('POST', 'http://127.0.0.1:80/api/register')
         xhr.setRequestHeader('content-Type', 'application/json')
         xhr.send(str)
         xhr.onreadystatechange = function () {

@@ -1,40 +1,3 @@
- @font-face {
-     font-family: 'icomoon';
-     src: url('fonts/icomoon.eot?kx9byf');
-     src: url('fonts/icomoon.eot?kx9byf#iefix') format('embedded-opentype'),
-         url('fonts/icomoon.ttf?kx9byf') format('truetype'),
-         url('fonts/icomoon.woff?kx9byf') format('woff'),
-         url('fonts/icomoon.svg?kx9byf#icomoon') format('svg');
-     font-weight: normal;
-     font-style: normal;
-     font-display: block;
- }
-
- * {
-     margin: 0;
-     padding: 0;
- }
-
- body {
-     font-family: "Microsoft YaHei";
-     font-size: 13px;
-     /* background-color: #2d3a4b; */
- }
-
- a {
-     text-decoration: none;
-     color: #466deb;
- }
-
- i,
- em {
-     font-style: normal;
- }
-
- li {
-     list-style: none;
- }
-
  .userinfo {
      margin: 0 auto;
      width: 1423px;
@@ -47,6 +10,7 @@
      background-color: #333;
      color: #fff;
      display: flex;
+     position: relative;
  }
 
  .title {
@@ -58,6 +22,7 @@
      width: 120px;
      text-align: center;
      position: relative;
+     color: #fff;
  }
 
  .title:hover {
@@ -66,7 +31,7 @@
 
  .triangle {
      position: absolute;
-     top: 34px;
+     top: 35px;
      left: 625px;
      height: 0;
      width: 0;
@@ -266,19 +231,50 @@
      justify-content: space-between;
  }
 
- .yellow {
+ .checking {
      color: rgba(211, 211, 17, 0.814);
  }
 
- .green {
+ .pass {
      color: green;
  }
 
- .red {
+ .return {
      color: red;
+     text-decoration: underline;
  }
 
  .empty {
      width: 90%;
      height: 20px;
+ }
+
+ .reason_container {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, 0.6);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+ }
+
+ .reason_container .reason_text {
+     width: 50%;
+     height: 50%;
+     margin: auto;
+     background-color: #fff;
+     border-radius: 8px;
+ }
+
+ .reason_container .reason_text>span {
+     display: inline-block;
+     width: 80%;
+     height: 80%;
+     margin-top: 20px;
+     margin-left: 20px;
+     font-size: 16px;
  }

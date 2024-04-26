@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/init.css">
+    <link rel="stylesheet" href="../assets/style/summary_manager.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="home_manager.html" class="title" style="margin-left: 150px;">首页</a>
+        <a href="summary_manager.html" class="title" style="color: rgb(17, 129, 227);">会议纪要</a>
+        <a href="answer_manager.html" class="title">疑问反馈</a>
+        <a href="userinfo_manager.html" class="title">个人中心</a>
+        <span class="triangle"></span>
+    </div>
+    <div class="search">
+        <div class="white"></div>
+        <div class="search_box">
+            <input type="text" value="请输入您想搜索的内容" class="search_text">
+            <i class="search_icon"></i>
+        </div>
+        <select name="type" class="select_type">
+            <option value="none">会议类型</option>
+            <option value="work">办公</option>
+            <option value="entertain">康乐</option>
+        </select>
+        <select name="label" class="select_label">
+            <option value="">会议标签</option>
+            <option value="none">无</option>
+            <option value="urgent">加急</option>
+            <option value="competition">比赛</option>
+            <option value="outsource">外包</option>
+            <option value="group">组会</option>
+            <option value="all">全体大会</option>
+        </select>
+    </div>
+    <div class="content_no">
+        <div class="c_title"><span>未审核</span></div>
+        <div class="c_nav">
+            <span>会议主题</span>
+            <span>会议类型</span>
+            <span>会议标签</span>
+            <span>会议时间</span>
+            <span>功能</span>
+        </div>
+        <div class="unchecked">
+            <a href="javascript:void(0)" class="topic">五一团建计划安排</a>
+            <span class="type">康乐</span>
+            <span class="label">无</span>
+            <span class="time">2024.4.25</span>
+            <div class="function">
+                <i class="watch"></i>
+                <i class="pass">通过</i>
+                <i class="back">不通过</i>
+            </div>
+        </div>
+        <div class="unchecked">
+            <a href="javascript:void(0)" class="topic">项目分析报告会</a>
+            <span class="type">办公</span>
+            <span class="label">组会</span>
+            <span class="time">2024.4.26</span>
+            <div class="function">
+                <i class="watch"></i>
+                <i class="pass">通过</i>
+                <i class="back">不通过</i>
+            </div>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div class="content_yes">
+        <div class="c_title"><span>已审核</span></div>
+        <div class="c_nav">
+            <span>会议主题</span>
+            <span>会议类型</span>
+            <span>会议标签</span>
+            <span>会议时间</span>
+            <span>功能</span>
+        </div>
+        <div class="list">
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic">最终考核中期会议答疑</a>
+                <span class="type">办公</span>
+                <span class="label">组会</span>
+                <span class="time">2024.4.21</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic">最终考核准备商讨会议</a>
+                <span class="type">办公</span>
+                <span class="label">全体大会</span>
+                <span class="time">2024.4.14</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic">前端全体会议</a>
+                <span class="type">办公</span>
+                <span class="label">组会 外包 加急</span>
+                <span class="time">2024.3.18</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic">QG全体会议</a>
+                <span class="type">办公</span>
+                <span class="label">全体大会 比赛</span>
+                <span class="time">2024.3.1</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic">开学大团建</a>
+                <span class="type">康乐</span>
+                <span class="label">无</span>
+                <span class="time">2024.3.1</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+            <div class="checked">
+                <a href="javascript:void(0)" class="topic" contenteditable="true">寒假外出团建</a>
+                <span class="type">康乐</span>
+                <span class="label">无</span>
+                <span class="time">2024.2.14</span>
+                <div class="function">
+                    <i class="watch"></i>
+                    <i class="modify"></i>
+                    <i class="delete"></i>
+                </div>
+            </div>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <script src="../js/summary_manager.js"></script>
+    <script src="../js/debounce.js"></script>
+</body>
+
+</html>

@@ -5,16 +5,16 @@ var fs = require('fs');
 const { log } = require('console');
 const serverHandler = (req, res) => {
     res.setHeader('Content-Type', 'application/json,text/html,stylesheet,script');//设置接受内容
-    // res.setHeader('Access-Control-Allow-Origin', '*');//设置可通过形式
-    res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
+    res.setHeader('Access-Control-Allow-Origin', '*');//设置可通过形式
+    // res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
     res.setHeader('Access-Control-Allow-Header', 'X-Requested-With');
     // res.setHeader('Access-Control-Allow-Header', '*');
     res.setHeader('Access-Control-Allow-Methods', 'DELETE,PUT,POST,GET,OPTIONS');
-    if (res.methord === 'OPTION') {
-        res.writeHead(200)
-        res.end();
-        return;
-    }
+    // if (res.methord === 'OPTION') {
+    //     res.writeHead(200)
+    //     res.end();
+    //     return;
+    // }
     const responseData = route(req, res);
     var url = req.url
     if (url === '/api') {
