@@ -17,16 +17,14 @@ const route = (req, res) => {
     const method = req.method
     const url = req.url
     const path = url.split('?')[0];
-    res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
+    res.setHeader('Access-Control-Allow-Origin', '*');//设置可通过形式
     if (method === 'POST' && path === '/api/register') {//注册的判断
-        // res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
         let postdata = '';
         req.on('data', chunk => {//流的方式获取数据
             postdata += chunk.toString();
         })
         req.on('end', () => {
             const userinfo = JSON.parse(postdata)//json转换
-            console.log(postdata);
             const sqlStr = 'select * from ev_users where username=?'//判断数据库中是否已存在
             db.query(sqlStr, userinfo.username, (err, results) => {
                 if (err) {
@@ -88,13 +86,6 @@ const route = (req, res) => {
             }
         }
     }
-    // if (method === 'GET' && path === '/api/register') {//注册的判断
-    //     res.setHeader('Access-Control-Allow-Origin', 'null');//设置可通过形式
-    //     return {
-    //         status: 1,
-    //         message: '注册用户成功！'
-    //     }
-    // }
     else if (method === 'POST' && path === '/api/login') {//登陆的判断
         let postdata = '';
         req.on('data', chunk => {//流的方式获取数据
@@ -108,6 +99,7 @@ const route = (req, res) => {
             }
             else {
                 index = 1
+                console.log(1);
                 const sql = 'select * from ev_users where username=?'
                 db.query(sql, userinfo.username, function (err, results) {//查询用户名判断是否存在
                     //执行sql语句失败

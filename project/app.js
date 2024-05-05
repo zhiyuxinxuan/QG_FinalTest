@@ -1,4 +1,4 @@
-// const { verify } = require('crypto');
+const { verify } = require('crypto');
 const route = require('./router/user')//获取路由
 const http = require('http');
 var fs = require('fs');
@@ -11,31 +11,35 @@ const serverHandler = (req, res) => {
     // res.setHeader('Access-Control-Allow-Header', '*');
     res.setHeader('Access-Control-Allow-Methods', 'DELETE,PUT,POST,GET,OPTIONS');
     // if (res.methord === 'OPTION') {
-    //     res.writeHead(200)
-    //     res.end();
-    //     return;
+    //     // res.writeHead(200)
+    //     // res.end();
+    //     // return;
+    //     res.setHeader('Access - Control - Allow - Origin', "*")
+    //     res.setHeader('Access - Control - Allow - Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+    //     console.log(req.url + 'options')
+    //     res.end(req.url + 'options')
     // }
     const responseData = route(req, res);
-    var url = req.url
-    if (url === '/api') {
-        fs.readFile(__dirname + '/views/login.html', 'utf-8', function (err, data) {//写入登录html
-            if (err) {
-                res.end('error')
-            }
-            else {
-                res.end(data)
-                return;
-            }
-        })
-    }
-    else if (responseData) {
+    // var url = req.url
+    // if (url === '/api') {
+    //     fs.readFile(__dirname + '/views/login.html', 'utf-8', function (err, data) {//写入登录html
+    //         if (err) {
+    //             res.end('error')
+    //         }
+    //         else {
+    //             res.end(data)
+    //             return;
+    //         }
+    //     })
+    // }
+    if (responseData) {
         // console.log(responseData);
         res.end(JSON.stringify(responseData))//返回不同状态
         return;
     }
-    // res.writeHead(404, { 'Content-Type': 'application/plain' })//判断是否存在
-    // res.write('404 Not Found');
-    // res.end();
+    res.writeHead(404, { 'Content-Type': 'application/plain' })//判断是否存在
+    res.write('404 Not Found');
+    res.end();
 }
 
 

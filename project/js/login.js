@@ -81,7 +81,6 @@ btn_login.onclick = function () {
         var xhr = new XMLHttpRequest()
         xhr.open('POST', 'http://127.0.0.1:80/api/login')
         xhr.setRequestHeader('content-Type', 'application/json')
-        xhr.setRequestHeader('Access-Control-Allow-Header', 'X-Requested-With');
         xhr.send(str)
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
